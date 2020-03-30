@@ -28,4 +28,28 @@ bottoneTira.addEventListener('click',
     }
   );
 
-  
+
+
+
+var lista = ['michele@boolean.careers', 'fabio@boolean.careers', 'roberto@boolean.careers']
+
+var email =  prompt ('Inserisci la tua email')
+
+var userFound = false;
+
+for (var i = 0; i < lista.length; i++) {
+  var item = lista [i];
+
+  if (item == email) {
+    userFound = true;
+  }
+}
+
+
+if (userFound==true ) {
+  console.log('Utente riconosciuto')
+}
+
+else {
+  console.log('Utente non riconosciuto')
+}
